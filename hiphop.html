@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+</style>
+<link href="style.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+<header>
+	<div class="container">
+      <div id="pp">
+
+    <!--導覽列 -->
+	<h2>小十七</h2>
+		
+		</div>
+
+    <nav>
+      <ul>
+        <li>
+          <a href="index.html">Home</a>
+        </li>
+        <li>
+          <a href="member.html">成員</a>
+        </li>
+        <li>
+          <a href="about.html">關於</a>
+        </li>
+      </ul>
+    </nav>
+		
+  </div>
+	
+
+	</header>
+<main>
+	
+
+	
+	<div id="hh">
+	<p>Say the name, SEVENTEEN</p>
+	</div>
+		<ul id="link_list">
+	  <li><a href="hiphop.html" >黑泡隊</a></li>
+		<li><a href="pp.html" >表演隊</a></li>
+		<li><a href="vocal.html" >主唱隊</a></li>
+
+		
+  </ul>
+<br><br><br>
+
+<div id="slide" class="slideshow-container">
+<div id="p1" class="mySlides fade">
+  <div class="numbertext">1 / 4</div>
+  <img src="p1.jpg" style="width:100%">
+  <div class="text">S.COUPS</div>
+</div>
+
+<div id="p2" class="mySlides fade">
+  <div class="numbertext">2 / 4</div>
+  <img src="p6.jpg" style="width:100%">
+  <div class="text">WONWOO</div>
+</div>
+
+<div id="p3" class="mySlides fade">
+  <div class="numbertext">3 / 4</div>
+  <img src="p9.jpg" style="width:100%">
+  <div class="text">MINGYU</div>
+</div>
+	<div id="p4" class="mySlides fade">
+  <div class="numbertext">4 / 4</div>
+  <img src="p12.jpg" style="width:100%">
+  <div class="text">VERNON</div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+	  <span class="dot"></span> 
+
+</div>
+	</div>
+	
+
+	<div id="v_h">
+	<iframe width="420" height="315"
+src="https://www.youtube.com/embed/7lDb86LRZkE">
+		</iframe>
+	</div>
+	
+	
+	</main>
+<footer>
+	
+	<p>此網站作為期末作業使用，無商業用途</p>
+	</footer>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+	
+
+	
+</script>
+
+</body>
+</html> 
